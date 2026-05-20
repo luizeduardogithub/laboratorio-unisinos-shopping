@@ -69,15 +69,12 @@ Java (JDK 25)
 Programação orientada a objetos
 Arrays nativos
 Ambiente de validação acadêmica
-
 Como executar
-
 javac *.java
 java ValidadorEtapa1
 java ValidadorEtapa2
 java ValidadorEtapa3
 java ValidadorEtapa4
-
 Observações
 
 Projeto desenvolvido exclusivamente para fins acadêmicos, sem uso de bibliotecas externas e seguindo rigorosamente os requisitos dos validadores.
