@@ -104,9 +104,43 @@ Todos os validadores foram aprovados.
 
 ## Como executar
 
+Siga os passos abaixo a partir da raiz do projeto (Windows PowerShell).
+
+1) Compilar todas as classes (gera os `.class` na raiz e na subpasta `validador-laboratorio-unisinos-shopping`):
+
+```powershell
+javac *.java validador-laboratorio-unisinos-shopping/*.java
+```
+
+2) Executar os validadores — em PowerShell o `-cp` que contém `;` deve ser colocado entre aspas:
+
+```powershell
+java -cp ".;validador-laboratorio-unisinos-shopping" ValidadorEtapa1
+java -cp ".;validador-laboratorio-unisinos-shopping" ValidadorEtapa2
+java -cp ".;validador-laboratorio-unisinos-shopping" ValidadorEtapa3
+java -cp ".;validador-laboratorio-unisinos-shopping" ValidadorEtapa4
+```
+
+3) Alternativa: executar a partir da subpasta dos validadores (sem usar `-cp` complexo):
+
+```powershell
+cd validador-laboratorio-unisinos-shopping
+javac *.java ..\*.java
+java -cp . ValidadorEtapa1
+```
+
+4) Em sistemas Unix (bash/zsh) use `:` como separador de classpath:
+
 ```bash
+javac *.java validador-laboratorio-unisinos-shopping/*.java
+java -cp ".:validador-laboratorio-unisinos-shopping" ValidadorEtapa1
+```
+
+Observações:
+- As classes validadoras não declaram `package`, por isso o JVM procura classes pela estrutura de pastas e pelo `-cp`.
+- Caso prefira executar a aplicação principal criada para teste, use:
+
+```powershell
 javac *.java
-java ValidadorEtapa1
-java ValidadorEtapa2
-java ValidadorEtapa3
-java ValidadorEtapa4
+java Main
+```
