@@ -1,90 +1,94 @@
-🏬 Laboratório Unisinos — Sistema de Shopping
+Laboratório Unisinos — Sistema de Shopping
 
-Sistema desenvolvido em Java para simulação de um shopping center com lojas de diferentes tipos, controle de estoque e validação automatizada por etapas.
+Projeto desenvolvido em Java para simular a estrutura de um shopping center com diferentes tipos de lojas, controle de estoque e validação automática por etapas.
 
-🎯 Objetivo do projeto
+O sistema foi construído com foco em programação orientada a objetos, utilizando herança, polimorfismo e manipulação de arrays.
 
-O projeto tem como objetivo aplicar conceitos de:
+Objetivo
 
-Programação orientada a objetos (POO)
-Herança e polimorfismo
+Aplicar conceitos fundamentais de programação orientada a objetos:
+
 Encapsulamento
-Manipulação de arrays
-Estruturação de sistemas em Java
-Validação automatizada por testes
-🧱 Estrutura do sistema
-
-O sistema é composto pelas seguintes classes:
-
-📦 Classes base
-Data → controle de datas e ano bissexto
-Endereco → informações de localização
-Produto → produtos com preço e validade
-🏬 Classe principal
-Loja → representa uma loja dentro do shopping
-Controle de funcionários
-Cálculo de gastos com salário
-Controle de estoque de produtos
-🏢 Tipos de lojas (herança)
+Herança e polimorfismo
+Organização de classes e responsabilidades
+Manipulação de arrays nativos
+Estruturação de sistema em múltiplas entidades
+Validação automatizada por testes em etapas
+Estrutura do sistema
+Classes base
+Data
+Manipulação de datas e verificação de ano bissexto
+Endereco
+Armazenamento de informações de localização
+Produto
+Controle de produtos com preço e validade
+Classe principal
+Loja
+Representa uma loja no shopping com:
+controle de funcionários
+cálculo de gastos com salários
+gerenciamento de estoque de produtos
+Tipos de lojas (herança)
 Cosmetico
 Vestuario
 Bijuteria
 Alimentacao
 Informatica
 
-Cada tipo adiciona características específicas.
+Cada classe adiciona atributos específicos ao modelo base.
 
-🛒 Shopping
-Shopping → gerencia um conjunto de lojas
+Shopping
+
+Classe responsável por gerenciar o conjunto de lojas do sistema:
+
 Inserção e remoção de lojas
-Contagem por tipo de loja
+Controle por capacidade fixa
+Contagem de lojas por tipo
+Identificação de loja de informática com maior seguro
+Funcionalidades
+Cadastro de lojas
+Controle de estoque com arrays fixos
+Remoção segura de elementos
+Cálculo de folha salarial
+Verificação de produtos vencidos
+Classificação por tipo de loja
 Busca de loja especializada
-⚙️ Funcionalidades principais
+Validação
 
-✔ Cadastro de lojas
-✔ Controle de estoque de produtos
-✔ Remoção e inserção em arrays fixos
-✔ Cálculo de salário total da loja
-✔ Verificação de produtos vencidos
-✔ Classificação de lojas por tipo
-✔ Busca de loja de informática com maior seguro
+O projeto foi validado automaticamente em etapas:
 
-🧪 Validação
+Etapa 1: classes base
+Etapa 2: classe Loja
+Etapa 3: herança das lojas especializadas
+Etapa 4: sistema completo com Shopping e estoque
 
-O projeto foi validado automaticamente por etapas:
+Todos os validadores foram aprovados.
 
-✔ Etapa 1 → Classes base (Data, Endereco, Produto)
-✔ Etapa 2 → Classe Loja e relacionamentos
-✔ Etapa 3 → Herança das lojas especializadas
-✔ Etapa 4 → Sistema completo com Shopping e estoque
-
-Todos os validadores foram aprovados com sucesso.
-
-🛠️ Tecnologias utilizadas
+Tecnologias utilizadas
 Java (JDK 25)
 Programação orientada a objetos
 Arrays nativos
-Validador automatizado da disciplina
-📁 Como executar
-Compile todos os arquivos:
+Ambiente de validação acadêmica
+
+Como executar
+
 javac *.java
-Execute os validadores:
 java ValidadorEtapa1
 java ValidadorEtapa2
 java ValidadorEtapa3
 java ValidadorEtapa4
-📌 Observações
-Projeto desenvolvido seguindo rigorosamente os requisitos dos validadores.
-Não foram utilizadas bibliotecas externas.
-Estrutura totalmente baseada em Java puro.
-Compatível com ambiente BlueJ / Java padrão.
-👨‍💻 Autor
+
+Observações
+
+Projeto desenvolvido exclusivamente para fins acadêmicos, sem uso de bibliotecas externas e seguindo rigorosamente os requisitos dos validadores.
+
+Autor
 
 Projeto acadêmico — Unisinos
 Sistema de simulação de shopping em Java
 
-🚀 Status
+Status
 
-✔ Finalizado
-✔ Validado
-✔ Entregue
+Concluído
+Validado
+Pronto para entrega
