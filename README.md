@@ -101,6 +101,10 @@ Todos os validadores foram aprovados.
 - Ambiente de validação acadêmica  
 
 ---
+## Arquitetura
+
+<img width="1536" height="1024" alt="arquitetura sistema shopping lab unisinos" src="https://github.com/user-attachments/assets/01335ad2-54eb-4b3e-810a-8f45d4d00cfd" />
+
 
 ## Como executar
 
